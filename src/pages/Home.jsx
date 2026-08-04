@@ -20,7 +20,7 @@ function Stat({ target, suffix, label }) {
 }
 
 const steps = [
-  { n: "01", icon: "message", title: "Describe your tas", text: "Tell AI Compass what you're trying to do, in plain words." },
+  { n: "01", icon: "message", title: "Describe your task", text: "Tell AI Compass what you're trying to do, in plain words." },
   { n: "02", icon: "search", title: "We analyze it", text: "The finder reads your intent and scores every tool for fit." },
   { n: "03", icon: "scale", title: "Compare the matches", text: "See ranked results with a match score and the reason why." },
   { n: "04", icon: "check", title: "Pick your AI", text: "Open the tool, save it, or compare a few side by side." },
