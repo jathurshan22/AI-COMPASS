@@ -1,4 +1,4 @@
-# 🧭 AI Compass
+#  AI Compass
 
 **Find the right AI for whatever you're trying to do.**
 
@@ -8,7 +8,7 @@ Built as a **frontend-only** React + Vite project with mock data. No backend req
 
 ---
 
-## ✨ Features
+##  Features
 
 - **AI Finder** — a rule-based recommendation engine that reads your intent, detects the category, and scores every tool for fit.
 - **Explore** — filter tools by category, pricing, and skill level, with live search and sorting.
@@ -19,7 +19,7 @@ Built as a **frontend-only** React + Vite project with mock data. No backend req
 - **Admin Dashboard** — overview stats, a category chart, and tool/user management tables.
 - Premium light UI: glassmorphism, a floating 3D compass hero, scroll reveals, count-up stats, 3D card tilt, and smooth page transitions.
 
-## 🎨 Design system
+##  Design system
 
 | Token | Value |
 |-------|-------|
@@ -30,14 +30,14 @@ Built as a **frontend-only** React + Vite project with mock data. No backend req
 | Text / Muted | `#0F172A` / `#64748B` |
 | Fonts | Sora (display), Inter (body), IBM Plex Mono (numbers) |
 
-## 🛠️ Tech stack
+##  Tech stack
 
 - React 18 + Vite 5
 - React Router 6
 - Plain CSS with design tokens (no UI framework)
 - Client-side mock data + recommendation logic
 
-## 🚀 Getting started
+##  Getting started
 
 ```bash
 npm install
@@ -48,7 +48,7 @@ npm run preview  # preview the build
 
 Then open the local URL Vite prints (usually `http://localhost:5173`).
 
-## 📁 Structure
+##  Structure
 
 ```
 src/
@@ -61,7 +61,7 @@ src/
 └── main.jsx      # entry
 ```
 
-## 🔌 Connecting a backend later
+##  Connecting a backend later
 
 The finder logic lives in `src/lib/finder.js` and all data in `src/data/`. To go full-stack, swap those for API calls (e.g. Node/Express + MongoDB) and replace the mock auth in `src/context/AppContext.jsx` with real endpoints — the UI won't need to change.
 
