@@ -1,0 +1,40 @@
+.sortsel { position: relative; }
+
+.sortsel-trigger {
+  display: inline-flex; align-items: center; gap: 10px;
+  padding: 8px 14px; border-radius: 999px;
+  border: 1px solid var(--line); background: var(--bg);
+  font-size: 0.86rem; font-weight: 500; color: var(--text);
+  cursor: pointer; box-shadow: var(--shadow-sm);
+  transition: border-color .18s ease, box-shadow .18s ease;
+}
+.sortsel-trigger:hover { border-color: rgba(37,99,235,0.35); }
+.sortsel.open .sortsel-trigger {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(37,99,235,0.12);
+}
+.sortsel-caret { color: var(--muted); transition: transform .22s ease, color .22s ease; }
+.sortsel.open .sortsel-caret { transform: rotate(180deg); color: var(--primary); }
+
+.sortsel-menu {
+  position: absolute; top: calc(100% + 8px); right: 0; z-index: 40;
+  min-width: 172px; margin: 0; padding: 6px; list-style: none;
+  background: var(--bg); border: 1px solid var(--line);
+  border-radius: 16px; box-shadow: 0 18px 44px rgba(15,23,42,0.14);
+  transform-origin: top right;
+  animation: sortsel-in .16s cubic-bezier(.2,.8,.2,1);
+}
+@keyframes sortsel-in {
+  from { opacity: 0; transform: translateY(-6px) scale(.97); }
+  to { opacity: 1; transform: none; }
+}
+
+.sortsel-opt {
+  display: flex; align-items: center; justify-content: space-between; gap: 12px;
+  padding: 10px 12px; border-radius: 11px;
+  font-size: 0.88rem; font-weight: 500; color: var(--text);
+  cursor: pointer; transition: background .14s ease, color .14s ease;
+}
+.sortsel-opt:hover { background: var(--grad-soft); color: var(--primary); }
+.sortsel-opt.sel { background: var(--grad); color: #fff; box-shadow: var(--shadow-primary); }
+.sortsel-check { color: currentColor; flex-shrink: 0; }

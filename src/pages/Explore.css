@@ -1,0 +1,13 @@
+.explore { padding-top: calc(var(--nav-h) + 48px); padding-bottom: 80px; }
+.explore-head { margin-bottom: 28px; }
+.explore-head h1 { font-size: clamp(1.9rem, 4vw, 2.8rem); margin: 12px 0 10px; }
+.explore-search { padding: 6px 8px 6px 20px; margin-bottom: 22px; }
+.explore-search input { width: 100%; border: none; outline: none; background: transparent; font-size: 1rem; padding: 12px 0; }
+.explore-filters { display: flex; flex-direction: column; gap: 14px; margin-bottom: 20px; }
+.filter-row { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+.filter-row.between { justify-content: space-between; }
+.sort-select {
+  padding: 8px 14px; border-radius: 999px; border: 1px solid var(--line);
+  background: var(--bg); font-size: 0.86rem; font-weight: 500; cursor: pointer; box-shadow: var(--shadow-sm);
+}
+.explore-count { margin-bottom: 20px; font-size: 0.85rem; }
